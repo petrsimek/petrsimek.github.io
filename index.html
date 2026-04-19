@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petr Šimek – projekty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fff;
+  --card: #fff;
+  --border: #e0e0e0;
+  --accent: #1565c0;
+  --accent-light: #e3f2fd;
+  --text: #212121;
+  --text-muted: #757575;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --ease: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  flex: 1;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.projects {
+  display: grid;
+  gap: 0.75rem;
+}
+.project {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+  transition: all var(--ease);
+}
+.project:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+.project-name {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Petr Šimek</h1>
+  <div class="subtitle">Moje osobní projekty</div>
+
+  <div class="section-title">Projekty</div>
+  <div class="projects">
+    <a href="/strazci/" class="project">
+      <div class="project-name">Strážci</div>
+      <div class="project-desc">Přehled epizod komiksového seriálu Strážci a jeho verzí v průběhu let od roku 1967 dodnes</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <a href="mailto:petr.simek@gmail.com">petr.simek@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/petrsimek/" target="_blank" rel="noopener">LinkedIn</a> ·
+  <a href="https://github.com/petrsimek" target="_blank" rel="noopener">GitHub</a>
+</footer>
+</body>
+</html>
